@@ -11,7 +11,7 @@ def main():
     amplitude = 1.5        # Амплитуда сигнала (В)
     frequency = 50         # Частота сигнала (Гц)
     sampling_rate = 1000   # Частота дискретизации (Гц)
-    address = 0x61        # I2C адрес MCP4725
+    address = 0x61        
     
     dac = None
     

@@ -4,10 +4,12 @@ import time
 
 amplitude = 3.2          
 signal_frequency = 10
-sampling_frequency = 1000 
+sampling_frequency = 1000
 
+gpio_bits = [22, 27, 17, 26, 25, 21, 20, 16]
+dynamic_range = 3.3
 try:
-    dac = r2r.R2R_DAC()
+    dac = r2r.R2R_DAC(gpio_bits, dynamic_range)
     
     start_time = time.time()
     
